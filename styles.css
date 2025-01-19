@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif; /* 确保字体一致 */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* 背景色 */
+    color: #555; /* 字体颜色 */
+    display: flex; /* 使用 flexbox 布局 */
+    flex-direction: column; /* 垂直方向排列 */
+    min-height: 100vh; /* 确保最小高度为视口高度 */
+}
+.sidebar {
+    width: 180px; /* 侧边栏宽度 */
+    height: 100vh; /* 侧边栏高度与视口高度相同 */
+    background-color: #f0f0f0; /* 侧边栏背景色 */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* 固定在左侧 */
+    top: 0;
+    left: 0;
+}
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.sidebar a:hover {
+    background-color: #ddd; /* 悬停时的背景色 */
+}
+header {
+    background-color: #4a90e2; /* 柔和的蓝色 */
+    color: white;
+    padding: 20px; /* 增加内边距以增加高度 */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* 固定在顶部 */
+    top: 0; /* 确保在顶部 */
+    left: 180px; /* 确保从侧边栏的右侧开始 */
+    width: calc(100% - 180px); /* 使 header 宽度等于屏幕宽度减去侧边栏宽度 */
+    z-index: 1000; /* 确保在其他内容之上 */
+}
+.content {
+    margin-top: 80px; /* 留出头部的空间 */
+    margin-left: 180px; /* 留出侧边栏的空间 */
+    padding: 0; /* 移除内边距 */
+    flex-grow: 1; /* 使内容区域占据剩余空间 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 垂直方向排列 */
+    align-items: center; /* 水平居中对齐 */
+}
+.container_area {
+    width: 100%; /* 宽度为100% */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* 设置最大宽度 */
+    padding: 20px; /* 添加内边距 */
+}
+.container {
+    width: 100%; /* 宽度为100% */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* 设置最大宽度 */
+    padding: 20px; /* 添加内边距 */
+}
+/* 新增内容区域的样式 */
+h2, h3 {
+    margin-top: 0; /* 移除顶部 margin */
+    font-weight: bold; /* 加粗标题 */
+    color: #333; /* 标题颜色 */
+}
+p {
+    line-height: 1.6; /* 增加行高以提高可读性 */
+    color: #555; /* 段落字体颜色 */
+    margin: 10px 0; /* 增加上下 margin */
+}
+ul {
+    padding-left: 20px; /* 列表左侧内边距 */
+}
+li {
+    margin-bottom: 10px; /* 列表项之间的间距 */
+    color: #555; /* 列表项字体颜色 */
+}
+footer {
+    text-align: center;
+    padding: 5px; /* 降低内边距以减少高度 */
+    background-color: #4a90e2; /* 柔和的蓝色 */
+    color: white;
+    position: fixed; /* 固定在底部 */
+    bottom: 0; /* 确保在底部 */
+    left: 180px; /* 确保从侧边栏的右侧开始 */
+    width: calc(100% - 180px); /* 使 footer 宽度等于屏幕宽度减去侧边栏宽度 */
+}
+
+img{
+    width: 650px;
+}
