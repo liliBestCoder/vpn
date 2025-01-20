@@ -6,36 +6,47 @@
     <title>VPN 解决方案</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        function loadPage(page) {
-            fetch(page)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
+        function loadContent() {
+            const hash = window.location.hash.substring(1); // Get the hash without the '#'
+            let fileToLoad;
+
+            switch (hash) {
+                case 'home':
+                    fileToLoad = 'home.html';
+                    break;
+                case 'v2ray':
+                    fileToLoad = 'v2ray.html';
+                    break;
+                case 'v2rayNG':
+                    fileToLoad = 'v2rayNG.html';
+                    break;
+                case 'v2rayU':
+                    fileToLoad = 'v2rayU.html';
+                    break;
+                default:
+                    fileToLoad = 'home.html';
+            }
+
+            fetch(fileToLoad)
+                .then(response => response.text())
                 .then(data => {
                     document.getElementById('content-area').innerHTML = data;
                 })
-                .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                });
+                .catch(error => console.error('Error loading content:', error));
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // 默认加载主页内容
-            loadPage('home.html'); // 创建一个 home.html 文件作为主页内容
-        });
+        window.addEventListener('hashchange', loadContent);
+        window.addEventListener('load', loadContent);
     </script>
 </head>
 <body>
 
 <div class="sidebar">
     <h2>菜单</h2>
-    <a href="#" onclick="loadPage('home.html')">主页</a>
-    <a href="#" onclick="loadPage('v2ray.html')">Windows教程</a>
-    <a href="#" onclick="loadPage('v2rayNG.html')">Andoid教程</a>
-    <a href="#" onclick="loadPage('v2rayU.html')">macOS教程</a>
+    <a href="#home" onclick="loadContent()">主页</a>
+    <a href="#v2ray" onclick="loadContent()">Windows教程</a>
+    <a href="#v2rayNG" onclick="loadContent()">Andoid教程</a>
+    <a href="#v2rayU" onclick="loadContent()">macOS教程</a>
 </div>
 
 <header>
