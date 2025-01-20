@@ -1,0 +1,2 @@
+binary/v2rayNG.apk filter=lfs diff=lfs merge=lfs -text
+binary/v2ray.zip filter=lfs diff=lfs merge=lfs -text
