@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         function loadContent() {
-            const hash = window.location.hash.substring(1); // Get the hash without the '#'
+            const hash = window.location.href.split("=").pop();// Get the hash without the '#'
             let fileToLoad;
-
             switch (hash) {
                 case 'home':
                     fileToLoad = 'home.html';
                     break;
-                case 'v2ray':
+                case 'v2rayN':
                     fileToLoad = 'v2rayN.html';
                     break;
                 case 'v2rayNG':
@@ -48,10 +47,10 @@
 
 <div class="sidebar">
     <h2>菜单</h2>
-    <a href="#home" onclick="loadContent()">主页</a>
-    <a href="#v2ray" onclick="loadContent()">Windows教程</a>
-    <a href="#v2rayNG" onclick="loadContent()">Andoid教程</a>
-    <a href="#v2rayU" onclick="loadContent()">macOS教程</a>
+    <a href="index?page=home" onclick="loadContent()">主页</a>
+    <a href="index?page=v2rayN" onclick="loadContent()">Windows教程</a>
+    <a href="index?page=v2rayNG" onclick="loadContent()">Andoid教程</a>
+    <a href="index?page=v2rayU" onclick="loadContent()">macOS教程</a>
 </div>
 
 <header>
