@@ -1,2 +1,4 @@
 User-agent: *
-Allow: /
+Allow: /index*
+
+Sitemap: https://site.vpn365.online/sitemap.xml
