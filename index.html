@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人VPN 解决方案 - 安全、快速的 VPN 服务</title>
     <meta name="description" content="提供免费、安全、快速的 个人VPN 解决方案，支持多种协议，包括 V2Ray、Shadowsocks 和 Trojan。保护您的隐私，畅享全球互联网。">
-    <meta name="keywords" content="VPN, V2Ray, Shadowsocks, Trojan, 网络安全, 隐私保护, 代理服务">
+    <meta name="keywords" content="VPN, V2Ray, Shadowsocks, Trojan, 网络安全, 隐私保护, 代理服务, 个人VPN搭建, VPN软件定制化">
     <meta name="author" content="Boss1871814749">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://site.vpn365.online">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function loadContent() {
-            const hash = window.location.href.split("=").pop();// Get the hash without the '#'
-            let fileToLoad;
-            switch (hash) {
-                case 'home':
-                    fileToLoad = 'home.html';
-                    break;
-                case 'v2rayN':
-                    fileToLoad = 'v2rayN.html';
-                    break;
-                case 'v2rayNG':
-                    fileToLoad = 'v2rayNG.html';
-                    break;
-                case 'v2rayU':
-                    fileToLoad = 'v2rayU.html';
-                    break;
-                case 'v2rayN-custom':
-                    fileToLoad = 'v2rayN-custom.html';
-                    break;
-                default:
-                    fileToLoad = 'home.html';
-            }
-
-            fetch(fileToLoad)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('content-area').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading content:', error));
-        }
-
-        window.addEventListener('hashchange', loadContent);
-        window.addEventListener('load', loadContent);
-    </script>
 </head>
+
 <body>
 
-<div class="sidebar">
-    <h2>菜单</h2>
-    <a href="index?page=home" onclick="loadContent()">主页</a>
-    <a href="index?page=v2rayN" onclick="loadContent()">Windows教程</a>
-    <a href="index?page=v2rayNG" onclick="loadContent()">Andoid教程</a>
-    <a href="index?page=v2rayU" onclick="loadContent()">macOS教程</a>
-    <a href="index?page=v2rayN-custom" onclick="loadContent()">v2rayN白嫖定制化</a>
-</div>
-
-<header>
-    <h1 style="font-size: 1.5em; margin: 0;">安全、快速的 VPN 解决方案</h1>
-    <p style="font-size: 0.9em; margin: 0;">保护您的隐私，畅享全球互联网</p>
-</header>
-
-<div class="content">
-    <div id="content-area" class="content_area">
-        <!-- 动态加载内容将显示在这里 -->
+    <div class="sidebar">
+        <h2>菜单</h2>
+        <a href="index.html" target="_parent">主页</a>
+        <a href="v2rayN.html" target="_parent">Windows教程</a>
+        <a href="v2rayNG.html" target="_parent">Andoid教程</a>
+        <a href="v2rayU.html" target="_parent">macOS教程</a>
+        <a href="v2rayN-custom.html" target="_parent">v2rayN白嫖定制化</a>
     </div>
-</div>
 
-<footer>
-    <p style="margin: 0;">&copy; 2024 VPN 解决方案. 保留所有权利.</p>
-</footer>
+    <header>
+        <h1 style="font-size: 1.5em; margin: 0;">安全、快速的 VPN 解决方案</h1>
+        <p style="font-size: 0.9em; margin: 0;">保护您的隐私，畅享全球互联网</p>
+    </header>
+
+    <div class="content">
+        <div id="content-area" class="content_area">
+            <div class="container">
+                <h2>欢迎来到 VPN 解决方案</h2>
+                <p>这里是主页内容，您可以在左侧菜单中选择不同的教程。</p>
+                <p>我们的 VPN 解决方案提供安全、快速的网络连接，帮助您保护隐私，畅享全球互联网。</p>
+
+                <h3>为什么需要使用 VPN？</h3>
+                <p>VPN能够帮助您越过网络壁垒，访问被限制的网站和服务，畅享全球互联网。无论是获取最新的国际新闻、观看海外视频，还是使用社交媒体，VPN 都能为您提供自由、安全的上网体验。</p>
+
+                <h3>我们的解决方案</h3>
+                <p>我们提供的 VPN 解决方案支持多种平台，确保您在任何设备上都能安全上网。我们的服务特点包括：</p>
+                <ul>
+                    <li>🔧 <strong>持续维护：</strong> 我会定期维护和更新节点，确保其稳定性和安全性。</li>
+                    <li>🧪 <strong>节点测试：</strong> 定期对节点进行性能测试，确保用户能够快速、顺畅地连接。</li>
+                    <li>🧹 <strong>节点清洗：</strong> 清理不稳定或失效的节点，保证用户始终能够接入高质量的服务。</li>
+                    <li>📱 <strong>多设备支持：</strong> 同时在多个设备上使用，方便灵活。</li>
+                </ul>
+
+                <h3>支持的平台</h3>
+                <ul>
+                    <li><strong>Windows:</strong> 使用 <strong>V2Ray</strong>，轻松配置，快速连接。</li>
+                    <li><strong>Android:</strong> 使用 <strong>V2RayNG</strong>，随时随地保护您的移动设备。</li>
+                    <li><strong>macOS:</strong> 使用 <strong>V2RayU</strong>，简单易用，完美兼容。</li>
+                </ul>
+
+                <h3>我们的优势</h3>
+                <ul>
+                    <li>🔒 <strong>高安全性：</strong> 采用先进的加密技术，保护您的数据安全。</li>
+                    <li>⚡ <strong>快速连接：</strong> 提供稳定的连接速度，畅享无阻的上网体验。</li>
+                    <li>🌍 <strong>全球覆盖：</strong> 访问全球内容，突破地域限制。</li>
+                    <li>💰 <strong>一次性付费：</strong> 只需一次性付费，无额外订阅费用。一口价只要20块。</li>
+                </ul>
+
+                <h3>立即联系我获取更多信息</h3>
+                <p>如果您对我们的 VPN 解决方案感兴趣，请通过微信联系我：</p>
+                <p><strong>微信号: Boss1871814749</strong></p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p style="margin: 0;">&copy; 2024 VPN 解决方案. 保留所有权利.</p>
+    </footer>
 
 </body>
+
 </html>

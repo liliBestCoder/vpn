@@ -2,43 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>https://site.vpn365.online</loc>
-  <lastmod>2025-01-27</lastmod>
+  <lastmod>2025-02-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.0</priority>
 </url>
 <url>
-  <loc>https://site.vpn365.online/index</loc>
-  <lastmod>2025-01-27</lastmod>
+  <loc>https://site.vpn365.online/index.html</loc>
+  <lastmod>2025-02-06</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.0</priority>
 </url>
 <url>
-    <loc>https://site.vpn365.online/index?page=home</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://site.vpn365.online/v2rayN.html</loc>
+   <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
-    <loc>https://site.vpn365.online/index?page=v2rayN</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://site.vpn365.online/v2rayNG.html</loc>
+   <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
-    <loc>https://site.vpn365.online/index?page=v2rayNG</loc>
-    <lastmod>2025-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-<url>
-    <loc>https://site.vpn365.online/index?page=v2rayU</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://site.vpn365.online/v2rayU.html</loc>
+   <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://site.vpn365.online/index?page=v2rayN-custom</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://site.vpn365.online/v2rayN-custom.html</loc>
+    <lastmod>2025-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
