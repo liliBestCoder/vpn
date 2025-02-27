@@ -19,21 +19,21 @@ body {
     left: 0;
 }
 /* 移动端适配 */
-@media (max-width: 768px) {{
-  .sidebar {{
+@media (max-width: 768px) {
+  .sidebar {
     width: 60px;
-  }}
-  .content {{
+  }
+  .content {
     margin-left: 60px; /* 补充分号 */
-  }}
-  header, footer {{
+  }
+  header, footer {
     left: 60px;
     width: calc(100% - 60px); /* 确保空格 */
-  }}
-  img {{
+  }
+  img {
     width: 100px;
-  }}
-}}
+  }
+}
  
 .sidebar a {
     display: block;
