@@ -131,6 +131,7 @@ footer {
   footer {
     left: 60px;
     width: calc(100% - 60px); /* 确保空格 */
+    height: 15px;
   }
 }
 
