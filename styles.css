@@ -26,6 +26,14 @@ body {
   .content {
     margin-left: 75px
   }
+  header {
+    left: 75px;
+    width: calc(100% - 75px);
+  }
+  footer {
+    left: 75px;
+    width: calc(100% - 75px);
+  }
 }
 .sidebar a {
     display: block;
