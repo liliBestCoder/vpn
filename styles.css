@@ -66,6 +66,7 @@ header {
 }
 @media (max-width: 768px) {
   .content {
+    margin-top: 52px;
     margin-left: 60px; /* 补充分号 */
     padding-left:40px;
   }
