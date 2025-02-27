@@ -35,7 +35,7 @@ body {
     width: calc(100% - 75px);
   }
   img {
-    width: 200px;
+    width: 100px;
   }
 }
 .sidebar a {
