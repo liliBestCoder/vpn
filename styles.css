@@ -94,7 +94,7 @@ header {
 
 @media (max-width: 768px) {
   .container {
-    width: calc(100% - 100px); /* 确保空格 */
+    width: calc(100% - 60px); /* 确保空格 */
   }
 }
 
