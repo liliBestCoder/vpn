@@ -21,7 +21,10 @@ body {
 /* 移动端适配 */
 @media (max-width: 768px) {
   .sidebar {
-    width: 80px; /* 移动端收缩至80px */
+    width: 75px; /* 移动端收缩至80px */
+  }
+  .content {
+    margin-left: 75px
   }
 }
 .sidebar a {
