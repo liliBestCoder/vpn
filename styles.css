@@ -21,10 +21,9 @@ body {
 /* 移动端适配 */
 @media (max-width: 768px) {
   .sidebar {
-    width: 100px;
+    width: 100px; /* 移动端收缩至80px */
   }
 }
- 
 .sidebar a {
     display: block;
     padding: 10px;
@@ -50,7 +49,7 @@ header {
     z-index: 1000; /* 确保在其他内容之上 */
 }
 @media (max-width: 768px) {
-  header {
+  header{
     left: 100px;
     width: calc(100% - 100px); /* 确保空格 */
   }
@@ -119,17 +118,17 @@ footer {
     width: calc(100% - 100px); /* 确保空格 */
   }
 }
+
 img{
     width: 650px;
 }
 
 @media (max-width: 768px) {
   img {
-    width: 280px;
+    width: 280px; /* 确保空格 */
   }
 }
 
 .phone{
     width: 300px;
 }
-
