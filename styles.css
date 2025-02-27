@@ -52,6 +52,7 @@ header {
   header{
     left: 60px;
     width: calc(100% - 60px); /* 确保空格 */
+    padding: 0px;
   }
 }
 .content {
@@ -84,6 +85,14 @@ header {
     max-width: 800px; /* 设置最大宽度 */
     padding: 20px; /* 添加内边距 */
 }
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 60px); /* 确保空格 */
+  }
+}
+
+
 /* 新增内容区域的样式 */
 h2, h3 {
     margin-top: 0; /* 移除顶部 margin */
