@@ -69,7 +69,7 @@ header {
     margin-left: 60px; /* 补充分号 */
   }
 }
-.container_area {
+#container_area {
     width: 100%; /* 宽度为100% */
     background: white;
     border-radius: 8px;
@@ -78,8 +78,9 @@ header {
     padding: 20px; /* 添加内边距 */
 }
 @media (max-width: 768px) {
-  .container_area {
+  #container_area {
     width: calc(100% - 60px); /* 确保空格 */
+    padding:0px;
   }
 }
 .container {
