@@ -58,7 +58,7 @@ header {
 .content {
     margin-top: 80px; /* 留出头部的空间 */
     margin-left: 180px; /* 留出侧边栏的空间 */
-    padding: 0; /* 移除内边距 */
+    padding-left:40px;
     flex-grow: 1; /* 使内容区域占据剩余空间 */
     display: flex; /* 使用 flex 布局 */
     flex-direction: column; /* 垂直方向排列 */
@@ -68,7 +68,6 @@ header {
   .content {
     margin-top: 52px;
     margin-left: 60px; /* 补充分号 */
-    padding-left:40px;
   }
 }
 .content_area {
