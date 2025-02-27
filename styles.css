@@ -18,6 +18,12 @@ body {
     top: 0;
     left: 0;
 }
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .sidebar {
+    flex-basis: 80px; /* 移动端收缩至80px */
+  }
+}
 .sidebar a {
     display: block;
     padding: 10px;
