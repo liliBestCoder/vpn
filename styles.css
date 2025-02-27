@@ -24,7 +24,7 @@ body {
     width: 75px; /* 移动端收缩至80px */
   }
   .content {
-    margin-left: 75px
+    margin-left: 75px;
   }
   header {
     left: 75px;
