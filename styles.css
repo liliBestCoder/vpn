@@ -21,7 +21,7 @@ body {
 /* 移动端适配 */
 @media (max-width: 768px) {
   .sidebar {
-    width: 100px; /* 移动端收缩至80px */
+    width: 60px; /* 移动端收缩至80px */
   }
 }
 .sidebar a {
@@ -50,8 +50,8 @@ header {
 }
 @media (max-width: 768px) {
   header{
-    left: 100px;
-    width: calc(100% - 100px); /* 确保空格 */
+    left: 60px;
+    width: calc(100% - 60px); /* 确保空格 */
   }
 }
 .content {
@@ -65,7 +65,7 @@ header {
 }
 @media (max-width: 768px) {
   .content {
-    margin-left: 100px; /* 补充分号 */
+    margin-left: 60px; /* 补充分号 */
   }
 }
 .container_area {
@@ -114,8 +114,8 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    left: 100px;
-    width: calc(100% - 100px); /* 确保空格 */
+    left: 60px;
+    width: calc(100% - 60px); /* 确保空格 */
   }
 }
 
