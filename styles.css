@@ -21,17 +21,7 @@ body {
 /* 移动端适配 */
 @media (max-width: 768px) {
   .sidebar {
-    width: 60px;
-  }
-  .content {
-    margin-left: 60px; /* 补充分号 */
-  }
-  header, footer {
-    left: 60px;
-    width: calc(100% - 60px); /* 确保空格 */
-  }
-  img {
-    width: 100px;
+    width: 70px;
   }
 }
  
@@ -59,6 +49,12 @@ header {
     width: calc(100% - 180px); /* 使 header 宽度等于屏幕宽度减去侧边栏宽度 */
     z-index: 1000; /* 确保在其他内容之上 */
 }
+@media (max-width: 768px) {
+  header {
+    left: 70px;
+    width: calc(100% - 70px); /* 确保空格 */
+  }
+}
 .content {
     margin-top: 80px; /* 留出头部的空间 */
     margin-left: 180px; /* 留出侧边栏的空间 */
@@ -67,6 +63,11 @@ header {
     display: flex; /* 使用 flex 布局 */
     flex-direction: column; /* 垂直方向排列 */
     align-items: center; /* 水平居中对齐 */
+}
+@media (max-width: 768px) {
+  .content {
+    margin-left: 70px; /* 补充分号 */
+  }
 }
 .container_area {
     width: 100%; /* 宽度为100% */
