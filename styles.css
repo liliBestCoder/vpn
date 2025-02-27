@@ -77,6 +77,11 @@ header {
     max-width: 800px; /* 设置最大宽度 */
     padding: 20px; /* 添加内边距 */
 }
+@media (max-width: 768px) {
+  .container_area {
+    width: calc(100% - 60px); /* 确保空格 */
+  }
+}
 .container {
     width: 100%; /* 宽度为100% */
     background: white;
@@ -88,7 +93,7 @@ header {
 
 @media (max-width: 768px) {
   .container {
-    width: calc(100% - 60px); /* 确保空格 */
+    width: calc(100% - 100px); /* 确保空格 */
   }
 }
 
