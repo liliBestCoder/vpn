@@ -147,3 +147,13 @@ img{
 .phone{
     width: 300px;
 }
+
+@media (max-width: 768px) {
+  .phone {
+    width: 200px; /* 确保空格 */
+  }
+}
+
+
+
+
