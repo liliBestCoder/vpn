@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="binary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/binary/nekoray.zip!/" />
+      <root url="jar://$PROJECT_DIR$/binary/v2ray.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
