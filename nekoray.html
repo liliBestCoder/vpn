@@ -129,7 +129,7 @@
     function downloadVCRedist(event) {
         event.preventDefault(); // 阻止默认的链接点击行为
         const urls = [
-            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/vc_redist.x64.exe',
+            'https://aka.ms/vs/17/release/vc_redist.x64.exe', // 修改为微软官方网站的地址
         ];
         const filename = 'vc_redist.x64.exe';
         downloadFile(urls, filename);
