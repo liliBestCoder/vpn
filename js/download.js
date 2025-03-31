@@ -11,7 +11,11 @@ async function downloadFile(urls, filename) {
         while (true) {
             const { done, value } = await reader.read();
             if (done) break;
-            await writer.write(value);
+            chunks.push(value);
+        }
+
+        for (const chunk of chunks) {
+            await writer.write(chunk);
         }
     }
 
