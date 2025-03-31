@@ -27,6 +27,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/streamsaver@2.0.5/StreamSaver.min.js"></script>
 </head>
 
 <body>
@@ -59,12 +60,8 @@
                 </ul>
 
                 <h3>第一步：适用平台</h3>
-                <p>macOS m芯片 用户可点击链接：<a
-                        href="https://ghfast.top/https://github.com/abbasnaqdi/nekoray-macos/releases/download/3.26/nekoray-3.26-apple-chip-official.zip"
-                        download>nekoray-apple.zip</a>下载nekoray客户端</p>
-                <p>macOS intel芯片 用户可点击链接：<a
-                        href="https://ghfast.top/https://github.com/abbasnaqdi/nekoray-macos/releases/download/3.26/nekoray-3.26-intel-chip-official.zip"
-                        download>nekoray-intel.zip</a>下载nekoray客户端</p>
+                <p>macOS m芯片 用户可点击链接：<a href="#" onclick="downloadNekorayApple(event)">nekoray-apple.zip</a>下载nekoray客户端</p>
+                <p>macOS intel芯片 用户可点击链接：<a href="#" onclick="downloadNekorayIntel(event)">nekoray-intel.zip</a>下载nekoray客户端</p>
                 <h2>安装与配置</h2>
                 <h3>第二步：配置 Nekoray</h3>
                 <ol>
@@ -139,3 +136,38 @@
 </body>
 
 </html>
+
+<script src="js/download.js" lang="javascript"></script>
+<script>
+    function downloadNekorayApple(event) {
+        event.preventDefault(); // 阻止默认的链接点击行为
+        const urls = [
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.001',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.002',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.003',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.004',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.005',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.006',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.007',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-apple-chip-official.zip.008'
+        ];
+        const filename = 'nekoray-apple.zip';
+        downloadFile(urls, filename);
+    }
+
+    function downloadNekorayIntel(event) {
+        event.preventDefault(); // 阻止默认的链接点击行为
+        const urls = [
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.001',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.002',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.003',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.004',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.005',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.006',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.007',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray-3.26-intel-chip-official.zip.008'
+        ];
+        const filename = 'nekoray-intel.zip';
+        downloadFile(urls, filename);
+    }
+</script>
