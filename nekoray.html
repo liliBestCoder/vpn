@@ -28,6 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/streamsaver@2.0.5/StreamSaver.min.js"></script>
 </head>
 
 <body>
@@ -68,10 +69,8 @@
 
             <h3>第一步：适用平台</h3>
             <p>Windows 用户可以下载 Nekoray 客户端，点击以下链接：<a
-                    href="https://ghfast.top/https://github.com/liliBestCoder/vpn/raw/refs/heads/main/binary/nekoray.zip"
-                    download>Nekoray.exe</a></p>
-            <p>如安装过程报dll确实，请安装<a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" download>vc_redist.x64.exe</a>
-            </p>
+                    href="#" onclick="downloadNekoray(event)">Nekoray.exe</a></p>
+            <p>如安装过程报dll确实，请安装<a href="#" onclick="downloadVCRedist(event)">vc_redist.x64.exe</a></p>
             <h3>第二步：配置 Nekoray</h3>
             <p>请联系我们购买订阅链接。得到链接后新增订阅。点击<strong>首选项</strong>选择<strong>分组</strong> 在弹出框中
                 点击<strong>新建分组</strong> 输入分组名称 类型 选择 <strong>订阅</strong> 在显示出来的url框中 输入购买的订阅链接
@@ -113,6 +112,31 @@
 <footer>
     <p style="margin: 0;">&copy; 2024 VPN 解决方案. 保留所有权利.</p>
 </footer>
+
+<script src="js/download.js" lang="javascript"></script>
+<script>
+    function downloadNekoray(event) {
+        event.preventDefault(); // 阻止默认的链接点击行为
+        const urls = [
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray.zip.001',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray.zip.002',
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/nekoray.zip.003'
+        ];
+        const filename = 'nekoray.zip';
+        downloadFile(urls, filename);
+    }
+
+    function downloadVCRedist(event) {
+        event.preventDefault(); // 阻止默认的链接点击行为
+        const urls = [
+            'https://aka.ms/vs/17/release/vc_redist.x64.exe.001',
+            'https://aka.ms/vs/17/release/vc_redist.x64.exe.002',
+            'https://aka.ms/vs/17/release/vc_redist.x64.exe.003'
+        ];
+        const filename = 'vc_redist.x64.exe';
+        downloadFile(urls, filename);
+    }
+</script>
 
 </body>
 
