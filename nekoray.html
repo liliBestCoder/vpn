@@ -129,9 +129,7 @@
     function downloadVCRedist(event) {
         event.preventDefault(); // 阻止默认的链接点击行为
         const urls = [
-            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/vc_redist.x64.exe.001',
-            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/vc_redist.x64.exe.002',
-            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/vc_redist.x64.exe.003'
+            'https://gcore.jsdelivr.net/gh/liliBestCoder/vpn/binary/vc_redist.x64.exe',
         ];
         const filename = 'vc_redist.x64.exe';
         downloadFile(urls, filename);
