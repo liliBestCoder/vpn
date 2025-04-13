@@ -260,18 +260,18 @@ sleep(5)
 app = pywinauto.Application(backend="uia").connect(path=nekobox_exe_path)
 dlg = app.window(title_re=".*NekoBox.*")
 
-show_floating_tip('正在更新订阅...', duration=15)
+show_floating_tip('正在更新订阅...勿动', duration=15)
 print("==================================5.更新订阅=======================================================")
 dlg.type_keys("^U")
 
 # url test
-show_floating_tip('正在URL Test...', duration=15)
+show_floating_tip('正在URL Test...勿动', duration=15)
 sleep(5)
 print("==================================6.URL Test测试=====================================================")
 dlg.type_keys("^%U")
 
 # 按延迟排序
-show_floating_tip('正在按延迟排序...', duration=60)
+show_floating_tip('正在按延迟排序...勿动', duration=60)
 print("==================================7.按延迟排序======================================================")
 sleep(60)
 dlg.child_window(auto_id="MainWindow.centralwidget", control_type="Group")\
@@ -285,7 +285,7 @@ dlg.child_window(auto_id="MainWindow.centralwidget", control_type="Group")\
 
 # 选中延迟较小的行
 sleep(5)
-show_floating_tip('正在启动服务器...', duration=15)
+show_floating_tip('正在启动服务器...勿动', duration=15)
 print("==================================8.启动服务器======================================================")
 dlg.child_window(auto_id="MainWindow.centralwidget", control_type="Group") \
     .child_window(auto_id="MainWindow.centralwidget.splitter", control_type="Custom") \
@@ -303,13 +303,13 @@ dlg.type_keys("{ENTER}")
 # 开启系统代理
 sleep(2)
 print("==================================9.开启系统代理======================================================")
-show_floating_tip('正在开启系统代理...', duration=15)
+show_floating_tip('正在开启系统代理...勿动', duration=15)
 dlg["系统代理"].click_input()
 
 # 创建桌面快捷方式
 sleep(2)
 print("==================================10.创建桌面快捷方式===================================================")
-show_floating_tip('正在创建桌面快捷方式...', duration=15)
+show_floating_tip('正在创建桌面快捷方式...勿动', duration=15)
 create_shortcut(
     name="NekoBox",
     target=nekobox_exe_path  # 把这个替换为你的实际路径
@@ -318,7 +318,7 @@ create_shortcut(
 # 打开浏览器访问https://www.google.com
 sleep(2)
 print("==================================11.打开浏览器，尝试访问谷歌===============================================")
-show_floating_tip('正在打开浏览器，尝试访问谷歌...', duration=15)
+show_floating_tip('配置已完成, 正在尝试访问谷歌...', duration=15)
 webbrowser.open("https://www.google.com.hk/search?q=nekoBox&newwindow=1&sca_esv=84558b4239d0d7dc&sxsrf=AHTn8zqOVZkWiUB0UD4J6yHoZww-wGTq5g%3A1743498263127&ei=F6zrZ5a-B56k2roPr7ffmAU")
 
 
