@@ -227,7 +227,7 @@ with open(nekobox_file_path, 'w', encoding='utf-8') as file:
     json.dump(nekobox_data, file, ensure_ascii=False, indent=4)
 
 print("==================================4.配置路由======================================================")
-show_floating_tip('正在配置路由...', duration=15)
+show_floating_tip('正在配置路由...勿动', duration=15)
 
 # 新增: 写入Default.json文件
 default_file_path = "nekoray/config/routes_box/Default.json"
