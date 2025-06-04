@@ -8,7 +8,7 @@
 CTRL+A网页全选，CTRL+C复制，右键点击任务栏v2rayN客户端图标，左键点击从剪贴板批量导入URL，即可一键导入所有v2ray节点
 ## v2ray免费节点订阅
 - `https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.txt`
-- `https://ghfast.top/https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.txt`
+- `https://ghfast.top/https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.txt` (链接1访问不通时 备用)
 
 ## 更多v2ray节点订阅
 ### [付费订阅](https://www.vpnpersonal.com/) — 不限时长 不限流量 不限设备数量 永久使用
