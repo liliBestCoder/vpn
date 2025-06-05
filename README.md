@@ -2,7 +2,7 @@
 | 客户端      | Android                            | Windows                           | MACOS        |
 |----------|------------------------------------|-----------------------------------|--------------|
 | sing-box | [Nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.9/NekoBox-1.3.9-arm64-v8a.apk) | [Nekoray](https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip) | [Nekoray](https://github.com/abbasnaqdi/nekoray-macos/releases/download/3.26/nekoray-3.26-intel-chip-official.zip) |
-## 使用教程：[点击查看](https://www.vpnpersonal.com/)
+## 使用教程：[点击查看](https://www.vpnpersonal.com/) [tg群组](https://t.me/+tiElEo4-IPIyOTJl)
 
 ## 节点导入方法
 CTRL+A网页全选，CTRL+C复制，点击Nekoray上端菜单栏服务器=>从剪切板导入，即可一键导入所有v2ray节点
