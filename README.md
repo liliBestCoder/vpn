@@ -3,7 +3,6 @@
 |----------|------------------------------------|-----------------------------------|--------------|
 | sing-box | [Nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.9/NekoBox-1.3.9-arm64-v8a.apk) | [Nekoray](https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip) | [Nekoray](https://github.com/abbasnaqdi/nekoray-macos/releases/download/3.26/nekoray-3.26-intel-chip-official.zip) |
 ## 使用教程：[点击查看](https://www.vpnpersonal.com/) 
-## tg群组：[点击查看](https://t.me/+tiElEo4-IPIyOTJl)
 
 ## 节点导入方法
 CTRL+A网页全选，CTRL+C复制，点击Nekoray上端菜单栏服务器=>从剪切板导入，即可一键导入所有v2ray节点
@@ -287,4 +286,9 @@ trojan://6884d714-d3c4-4b49-aa20-767ea92837d6@172.67.179.98:443?security=tls&sni
 vless://53fa8faf-ba4b-4322-9c69-a3e5b1555049@45.131.209.171:80?security=none&type=ws&host=reedfree8mahsang2.redorg.ir&path=%2F#Join+Telegram:@Farah_VPN
 vless://92fc3c1b-c409-4610-b1a6-9a8ef4287891@141.95.107.22:1370?security=reality&sni=refersion.com&type=tcp&fp=chrome&pbk=_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw&sid=e1afb93bfe75a34b#Join+Telegram:@Farah_VPN
 
+```
+
+## tg群 
+```
+  https://t.me/+tiElEo4-IPIyOTJl
 ```
