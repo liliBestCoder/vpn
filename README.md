@@ -288,7 +288,7 @@ vless://92fc3c1b-c409-4610-b1a6-9a8ef4287891@141.95.107.22:1370?security=reality
 
 ```
 
-## tg群 
+## 微信
 ```
-  https://t.me/+tiElEo4-IPIyOTJl
+  Boss1871814749
 ```
