@@ -8,7 +8,7 @@
 CTRL+A网页全选，CTRL+C复制，点击Nekoray上端菜单栏服务器=>从剪切板导入，即可一键导入所有v2ray节点
 ## v2ray免费节点订阅
 - `https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.txt`
-- `https://ghfast.top/https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.txt` (链接1访问不通时 备用)
+- `https://gh-proxy.com/github.com/liliBestCoder/vpn/blob/main/nodes.txt` (链接1访问不通时 备用)
 
 ## 更多v2ray节点订阅
 ### [付费订阅](https://www.vpnpersonal.com/) — 不限时长 不限流量 不限设备数量 永久使用
