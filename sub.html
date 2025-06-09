@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown 在线预览</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1em 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">加载中...</div>
+  <script>
+    const src = "https://gh-proxy.com/raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/README.md"
+
+    marked.setOptions({
+      gfm: true,
+      breaks: true, // 如果你希望换行用 <br> 而不是 <p>
+    });
+
+    if (src) {
+      fetch(src)
+        .then(res => res.text())
+        .then(md => {
+          document.getElementById("content").innerHTML = marked.parse(md);
+        })
+        .catch(err => {
+          document.getElementById("content").innerText = "加载失败：" + err;
+        });
+    } else {
+      document.getElementById("content").innerText = "请提供 ?src=Markdown 文件链接";
+    }
+  </script>
+</body>
+</html>
