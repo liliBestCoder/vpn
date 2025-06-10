@@ -1,4 +1,4 @@
-# v2ray节点订阅 VPN网络代理
+# v2ray节点订阅 clash节点订阅 VPN网络代理
 | 客户端      | Android                            | Windows                           | MACOS        |
 |----------|------------------------------------|-----------------------------------|--------------|
 | sing-box | [Nekobox](https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.3.9/NekoBox-1.3.9-arm64-v8a.apk) | [Nekoray](https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip) | [Nekoray](https://github.com/abbasnaqdi/nekoray-macos/releases/download/3.26/nekoray-3.26-intel-chip-official.zip) |
@@ -14,14 +14,14 @@ CTRL+A网页全选，CTRL+C复制，点击Nekoray上端菜单栏服务器=>从�
 - `https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.yaml`
 - `https://gh-proxy.com/github.com/liliBestCoder/vpn/blob/main/nodes.yaml` (链接1访问不通时 备用)
 
-## 更多v2ray节点订阅
+## 更多v2ray/clash节点订阅
 ### [付费订阅](https://www.vpnpersonal.com/) — 不限时长 不限流量 不限设备数量 永久使用
 - 普速订阅 19.9永久 大部分速度低于1M/s左右 节点很多 也有不少高速的 但 需要自己去测速 适合看看网页
 - 中速订阅 29.9永久 大部分速度在2M/s左右 已经可以刷起短视频了
 - 高速订阅 39.9永久 速度在3M/s-10M/s之间 个别节点甚至超过10M/s
 - 普速订阅有着全部的节点 只是要自己去测试速度 中速订阅、高速订阅是后台已 经测完的 都是一次付费永久使用
 
-## v2ray免费节点分享
+## v2ray/clash免费节点分享
 
 ```  
 hysteria2://b8bd42a9-551f-419d-b70d-4aefdd2cb074@208.87.242.215:443?insecure=1&fp=&sni=www.bing.com&obfs=&obfs-password=#1%7C%F0%9F%87%BA%F0%9F%87%B842%20%7C%20%205.7MB/s%7C47%25%7CNetflix%7CDi...
