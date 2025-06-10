@@ -10,6 +10,10 @@ CTRL+A网页全选，CTRL+C复制，点击Nekoray上端菜单栏服务器=>从�
 - `https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.txt`
 - `https://gh-proxy.com/github.com/liliBestCoder/vpn/blob/main/nodes.txt` (链接1访问不通时 备用)
 
+## clash免费节点订阅
+- `https://raw.githubusercontent.com/liliBestCoder/vpn/refs/heads/main/nodes.yaml`
+- `https://gh-proxy.com/github.com/liliBestCoder/vpn/blob/main/nodes.yaml` (链接1访问不通时 备用)
+
 ## 更多v2ray节点订阅
 ### [付费订阅](https://www.vpnpersonal.com/) — 不限时长 不限流量 不限设备数量 永久使用
 - 普速订阅 19.9永久 大部分速度低于1M/s左右 节点很多 也有不少高速的 但 需要自己去测速 适合看看网页
