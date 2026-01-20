@@ -162,7 +162,7 @@ img{
   padding: 0;            /* 去掉内边距 */
   margin: 0;
   font: inherit;         /* 继承父级字号、字体 */
-  color: #1a0dab;        /* 经典链接蓝 */
+  color: #0000FF;        /* 经典链接蓝 */
   text-decoration: underline;
   cursor: pointer;
 }
