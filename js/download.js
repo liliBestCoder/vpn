@@ -1,29 +1,24 @@
-async function downloadFile(urls, filename) {
-    const fileStream = streamSaver.createWriteStream(filename);
-    const writer = fileStream.getWriter();
+function downloadFile(urls, filename) {
+  // 1. 立即同步创建文件流，保住用户手势
+  const fileStream = streamSaver.createWriteStream(filename);
+  const writer     = fileStream.getWriter();
 
-    for (const url of urls) {
-        const response = await fetch(url);
-        const reader = response.body.getReader();
-        const chunks = [];
-        let firstChunk;
-
+  // 2. 真正干活的部分包成 async，但不影响前面的同步调用
+  (async () => {
+    try {
+      for (const url of urls) {
+        const res  = await fetch(url);
+        const reader = res.body.getReader();
         while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            chunks.push(value);
-            if(!firstChunk){
-                firstChunk = value;
-                await writer.write(firstChunk);
-            }
+          const { done, value } = await reader.read();
+          if (done) break;
+          await writer.write(value);   // 逐块写
         }
-
-        for (const chunk of chunks) {
-            if(chunk !== firstChunk){
-                await writer.write(chunk);
-            }
-        }
+      }
+    } catch (e) {
+      console.error(e);
+    } finally {
+      await writer.close();
     }
-
-    writer.close();
+  })();
 }
